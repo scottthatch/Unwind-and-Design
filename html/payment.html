@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Unwind and Design</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Unwind and Design</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schedule.html">Schedule Delivery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="payment">
+        <h2>Complete Your Payment</h2>
+        <p>To confirm your order, please enter your payment details.</p>
+
+        <!-- Payment Form -->
+        <form id="payment-form">
+            <label for="card-name">Cardholder's Name:</label>
+            <input type="text" id="card-name" name="card-name" required>
+
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" required>
+
+            <label for="expiry-date">Expiry Date (MM/YY):</label>
+            <input type="text" id="expiry-date" name="expiry-date" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+
+            <button type="submit">Pay Now</button>
+        </form>
+
+        <div id="payment-confirmation" style="display: none;">
+            <h3>Thank you for your payment!</h3>
+            <p>Your payment has been processed successfully. Your party package will be delivered on the scheduled date.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Unwind and Design</p>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

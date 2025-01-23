@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Delivery - Unwind and Design</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Unwind and Design</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schedule.html">Schedule Delivery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="schedule">
+        <h2>Schedule Your Delivery</h2>
+        <p>Select your delivery date and time (must be at least 2 weeks in advance).</p>
+        <form id="schedule-form">
+            <label for="delivery-date">Pick a Date:</label>
+            <input type="date" id="delivery-date" name="delivery-date" min="" required>
+            
+            <label for="number-of-guests">Number of Guests:</label>
+            <input type="number" id="number-of-guests" name="number-of-guests" min="1" required>
+            
+            <button type="submit">Confirm</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Unwind and Design</p>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
